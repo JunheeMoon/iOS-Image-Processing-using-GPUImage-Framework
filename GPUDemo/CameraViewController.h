@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "GPUImage.h"
+#import "GPUImageQuadGenerator.h"
+#import "GPUImageFindContourDetector.h"
+#import "GPUImageHorizontalBindingFilter.h"
 
 @interface CameraViewController : UIViewController
 {
     GPUImageStillCamera *stillCamera;
     GPUImageFilter *filter;
     GPUImageView *image;
+    
+    GPUImageFindContourDetector *findContour;
+    GPUImageHorizontalBindingFilter *hblFilter;
 }
 - (IBAction)btnCaptureClicked:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *btnCapture;

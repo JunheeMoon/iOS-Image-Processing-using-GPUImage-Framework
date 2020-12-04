@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8B7CF09257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B7CF02257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.m */; };
+		A8B7CF0A257A95BF00CD8726 /* GPUImageQuadGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B7CF03257A95BF00CD8726 /* GPUImageQuadGenerator.m */; };
+		A8B7CF0B257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B7CF06257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.m */; };
+		A8B7CF0C257A95BF00CD8726 /* GPUImageFindContourDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B7CF08257A95BF00CD8726 /* GPUImageFindContourDetector.m */; };
 		EAF48E1618E52DE900AE37D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF48E1518E52DE900AE37D1 /* Foundation.framework */; };
 		EAF48E1818E52DE900AE37D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF48E1718E52DE900AE37D1 /* CoreGraphics.framework */; };
 		EAF48E1A18E52DE900AE37D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF48E1918E52DE900AE37D1 /* UIKit.framework */; };
@@ -201,6 +205,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8B7CF01257A95BF00CD8726 /* GPUImageQuadGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageQuadGenerator.h; sourceTree = "<group>"; };
+		A8B7CF02257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageHorizontalBindingFilter.m; sourceTree = "<group>"; };
+		A8B7CF03257A95BF00CD8726 /* GPUImageQuadGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageQuadGenerator.m; sourceTree = "<group>"; };
+		A8B7CF04257A95BF00CD8726 /* GPUImageFindContourDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFindContourDetector.h; sourceTree = "<group>"; };
+		A8B7CF05257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageHorizontalBindingFilter.h; sourceTree = "<group>"; };
+		A8B7CF06257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageAdaptiveThresholdFilter2.m; sourceTree = "<group>"; };
+		A8B7CF07257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageAdaptiveThresholdFilter2.h; sourceTree = "<group>"; };
+		A8B7CF08257A95BF00CD8726 /* GPUImageFindContourDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageFindContourDetector.m; sourceTree = "<group>"; };
 		EAF48E1218E52DE900AE37D1 /* GPUDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF48E1518E52DE900AE37D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EAF48E1718E52DE900AE37D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -682,6 +694,14 @@
 		EAF48E6118E5375A00AE37D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A8B7CF07257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.h */,
+				A8B7CF06257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.m */,
+				A8B7CF04257A95BF00CD8726 /* GPUImageFindContourDetector.h */,
+				A8B7CF08257A95BF00CD8726 /* GPUImageFindContourDetector.m */,
+				A8B7CF05257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.h */,
+				A8B7CF02257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.m */,
+				A8B7CF01257A95BF00CD8726 /* GPUImageQuadGenerator.h */,
+				A8B7CF03257A95BF00CD8726 /* GPUImageQuadGenerator.m */,
 				EAF48E6218E5375A00AE37D1 /* GLProgram.h */,
 				EAF48E6318E5375A00AE37D1 /* GLProgram.m */,
 				EAF48E6418E5375A00AE37D1 /* GPUImage.h */,
@@ -1063,6 +1083,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "TheAppGuruz-New-6";
 				TargetAttributes = {
+					EAF48E1118E52DE900AE37D1 = {
+						DevelopmentTeam = 7858887V63;
+					};
 					EAF48E3518E52DE900AE37D1 = {
 						TestTargetID = EAF48E1118E52DE900AE37D1;
 					};
@@ -1073,6 +1096,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1141,6 +1165,7 @@
 				EAF4901318E5375B00AE37D1 /* GPUImageRGBDilationFilter.m in Sources */,
 				EAF4903618E5375B00AE37D1 /* GPUImageTwoPassFilter.m in Sources */,
 				EAF48FFE18E5375B00AE37D1 /* GPUImageMultiplyBlendFilter.m in Sources */,
+				A8B7CF09257A95BF00CD8726 /* GPUImageHorizontalBindingFilter.m in Sources */,
 				EAF48FBE18E5375B00AE37D1 /* GPUImageContrastFilter.m in Sources */,
 				EAF4900518E5375B00AE37D1 /* GPUImageOverlayBlendFilter.m in Sources */,
 				EAF48FEE18E5375B00AE37D1 /* GPUImageLocalBinaryPatternFilter.m in Sources */,
@@ -1186,6 +1211,7 @@
 				EAF48FF418E5375B00AE37D1 /* GPUImageLuminosityBlendFilter.m in Sources */,
 				EAF4901018E5375B00AE37D1 /* GPUImageRawDataInput.m in Sources */,
 				EAF4903F18E5375B00AE37D1 /* GPUImageXYDerivativeFilter.m in Sources */,
+				A8B7CF0B257A95BF00CD8726 /* GPUImageAdaptiveThresholdFilter2.m in Sources */,
 				EAF4902C18E5375B00AE37D1 /* GPUImageThreeInputFilter.m in Sources */,
 				EAF4902318E5375B00AE37D1 /* GPUImageSolidColorGenerator.m in Sources */,
 				EAF4902D18E5375B00AE37D1 /* GPUImageThresholdEdgeDetectionFilter.m in Sources */,
@@ -1204,6 +1230,7 @@
 				EAF48FCA18E5375B00AE37D1 /* GPUImageErosionFilter.m in Sources */,
 				EAF48FBC18E5375B00AE37D1 /* GPUImageColorMatrixFilter.m in Sources */,
 				EAF4900B18E5375B00AE37D1 /* GPUImagePoissonBlendFilter.m in Sources */,
+				A8B7CF0C257A95BF00CD8726 /* GPUImageFindContourDetector.m in Sources */,
 				EAF48FC918E5375B00AE37D1 /* GPUImageEmbossFilter.m in Sources */,
 				EAF4902218E5375B00AE37D1 /* GPUImageSoftLightBlendFilter.m in Sources */,
 				EAF48E2618E52DE900AE37D1 /* AppDelegate.m in Sources */,
@@ -1226,6 +1253,7 @@
 				EAF4902F18E5375B00AE37D1 /* GPUImageThresholdSketchFilter.m in Sources */,
 				EAF48FB218E5375B00AE37D1 /* GPUImageBulgeDistortionFilter.m in Sources */,
 				EAF48FBF18E5375B00AE37D1 /* GPUImageCropFilter.m in Sources */,
+				A8B7CF0A257A95BF00CD8726 /* GPUImageQuadGenerator.m in Sources */,
 				EAF48FAA18E5375B00AE37D1 /* GPUImageAlphaBlendFilter.m in Sources */,
 				EAF4903318E5375B00AE37D1 /* GPUImageTransformFilter.m in Sources */,
 				EAF4901218E5375B00AE37D1 /* GPUImageRGBClosingFilter.m in Sources */,
@@ -1367,7 +1395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1400,7 +1428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1412,6 +1440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7858887V63;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPUDemo/GPUDemo-Prefix.pch";
 				INFOPLIST_FILE = "GPUDemo/GPUDemo-Info.plist";
@@ -1425,6 +1454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 7858887V63;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPUDemo/GPUDemo-Prefix.pch";
 				INFOPLIST_FILE = "GPUDemo/GPUDemo-Info.plist";

@@ -26,8 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self initializeCamera];
+    //[self initializeCamera];
         // Do any additional setup after loading the view.
+    [self initializeCameraFindContour];
 }
 
 -(void)initializeCamera
@@ -44,6 +45,41 @@
     [filter addTarget:image];
     [stillCamera startCameraCapture];
 
+}
+
+-(void)initializeCameraFindContour
+{
+    stillCamera=[[GPUImageStillCamera alloc]initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionBack];
+    stillCamera.outputImageOrientation=UIInterfaceOrientationPortrait;
+    image=[[GPUImageView alloc]initWithFrame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)];
+    [self.view addSubview:image];
+    [self.view bringSubviewToFront:btnCapture];
+    
+    //1. Preprocessing.
+    
+    hblFilter=[[GPUImageHorizontalBindingFilter alloc]init];
+    [stillCamera    addTarget:hblFilter];
+    //2. Detection START
+    findContour = [[GPUImageFindContourDetector alloc] init];
+    [hblFilter addTarget:findContour];
+     
+    
+    //3. blend quads from detected dots
+     GPUImageQuadGenerator *quadGenerator = [[GPUImageQuadGenerator alloc] init];
+     [quadGenerator forceProcessingAtSize: image.sizeInPixels];
+     [findContour setBoxesDetectedBlock:^(GLfloat* boxArray, NSUInteger boxesDetected, CMTime frameTime) {
+              [quadGenerator renderQuadsFromArray:boxArray count:boxesDetected frameTime:frameTime];
+     }];
+    
+     GPUImageAlphaBlendFilter *blendFilter = [[GPUImageAlphaBlendFilter alloc] init];
+     [blendFilter forceProcessingAtSize:image.sizeInPixels];
+     [stillCamera addTarget:blendFilter];//카메라에 뿌리기
+     //[findContour addTarget:blendFilter];//전처리에 뿌리기
+     [quadGenerator addTarget:blendFilter];
+     [blendFilter addTarget:image];
+    
+     //전처리 뿌리기
+     [stillCamera startCameraCapture];
 }
 
 - (void)didReceiveMemoryWarning
