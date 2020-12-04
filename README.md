@@ -1,4 +1,4 @@
-2020-12-05  >> junheeMoon Added FindContours to iOS-Image-Processing-using-GPUImage-Framework
+junheeMoon Added FindContours to iOS-Image-Processing-using-GPUImage-Framework
 =============================================
 
 Added Followings.
